@@ -4,7 +4,7 @@ import { FiPlusCircle, FiMinusCircle, FiXCircle } from 'react-icons/fi'
  
 import './styles.css';
  
-export default function Cart() {
+export default function ShoppingCart() {
  return (
    <main className="container">
      <div className="bag-container">

@@ -4,7 +4,7 @@ import { FiShoppingBag } from 'react-icons/fi';
 
 import './styles.css';
 
-export default function Home() {
+export default function ProductList() {
   return (
     <main className="container">
       <ul className="book-catalog">
