@@ -10,22 +10,35 @@
   flex-direction: column;
   background: #fff;
   border-radius: 4px;
-  padding: 10px;
+  padding: 15px;
 }
 
-.book-container img {
+.book-info {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+
+.book-info:hover {
+  cursor: pointer;
+}
+
+.book-info img {
   align-self: center;
-  max-width: 180px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+
 }
 
-.book-container>strong {
+.book-info>strong {
   font-size: 16px;
   line-height: 20px;
   color: #878C99;
   margin-top: 8px;
 }
 
-.book-container>span {
+.book-info>span {
   font-size: 24px;
   font-weight: bold;
   margin: 8px 0;

@@ -1,18 +1,21 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 import { FiShoppingBag } from 'react-icons/fi';
 import './styles.css';
 
-export default function Header({ items, handler }) {
-  console.log(handler)
+export default function Header({ items }) {
+  const history = useHistory();
 
   return (
     <ul className="book-catalog">
       {items.map(item => (
         <li key={item.id} className="book-container">
-          <img src={item.image} alt={item.title} />
-          <strong>{item.title}</strong>
-          <span>R$ {item.price}</span>
+          <div className="book-info" onClick={() => { history.push(`/product/${item.id}`); }}>
+            <img src={item.image} alt={item.title} />
+            <strong>{item.title}</strong>
+            <span>R$ {item.price}</span>
+          </div>
 
           <button type="button" onClick={() => { }}>
             <div>
