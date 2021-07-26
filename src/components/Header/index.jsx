@@ -14,7 +14,7 @@ export default function Header() {
         <span className="logo-text">Marketplace</span>
       </Link>
 
-      <Link to="/shoppingCart" className="header-cart">
+      <Link to="/shopping-cart" className="header-cart">
         <div>
           <strong>Sacola</strong>
           <span>

@@ -8,7 +8,7 @@ export default function Routes() {
  return (
    <Switch>
       <Route path="/products" exact component={ProductsList} />
-      <Route path="/shoppingCart" exact component={ShoppingCart} />
+      <Route path="/shopping-cart" exact component={ShoppingCart} />
       <Route render={() => <Redirect to="/products" />} />
    </Switch>
  );
