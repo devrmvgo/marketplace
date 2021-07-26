@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { products } from '../../server.json';
 
 import List from '../../components/List'
