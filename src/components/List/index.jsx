@@ -5,7 +5,7 @@ import './styles.css';
 
 export default function Header({ items, handler }) {
   console.log(handler)
-  
+
   return (
     <ul className="book-catalog">
       {items.map(item => (
