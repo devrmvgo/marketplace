@@ -1,7 +1,7 @@
 .book-catalog {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
   list-style: none;
 }
 
@@ -10,8 +10,7 @@
   flex-direction: column;
   background: #fff;
   border-radius: 4px;
-  padding: 16px;
-  width: 220px;
+  padding: 10px;
 }
 
 .book-container img {
