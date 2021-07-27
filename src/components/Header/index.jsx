@@ -1,27 +1,32 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+//LINK REDIRECT
 import { Link } from 'react-router-dom';
-
+//STORE DATA
+import { useSelector } from 'react-redux';
+// STYLE AND ICONS
+import logo from '../../assets/catalog.png';
 import { FiShoppingBag } from 'react-icons/fi';
 import './styles.css';
 
-import logo from '../../assets/catalog.png';
-
 export default function Header() {
-  const cartSize = useSelector(state => state.cart.length);
+  //ITEMS QUANTITY IN SHOPPING CART
+  const shoppingCartSize = useSelector(state => state.shoppingCart.length);
 
   return (
     <header className="header">
+      {/* REDIRECT TO HOME (PRODUCTS LIST) WHEN CLICKED */}
       <Link to="/" className="logo">
         <img className="logo-icon" src={logo} alt="Rocketshoes" />
         <span className="logo-text">Marketplace</span>
       </Link>
 
-      <Link to="/shopping-cart" className="header-cart">
+
+      {/* REDIRECT TO SHOPPING CART WHEN CLICKED */}
+      <Link to="/shopping-cart" className="header-shopping-cart">
         <div>
           <strong>Sacola</strong>
           <span>
-            <strong>{cartSize}</strong> produtos
+            <strong>{shoppingCartSize}</strong> produtos
           </span>
         </div>
         <FiShoppingBag size={36} color="#FFF" />

@@ -1,11 +1,11 @@
-.book-catalog {
+.product-catalog {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   list-style: none;
 }
 
-.book-container {
+.product-container {
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -13,41 +13,40 @@
   padding: 15px;
 }
 
-.book-info {
+.product-info {
   display: flex;
   flex-direction: column;
   margin: 5px 0;
 }
 
-.book-info:hover {
+.product-info:hover {
   cursor: pointer;
 }
 
-.book-info img {
+.product-info img {
   align-self: center;
   width: 150px;
   height: 150px;
   object-fit: cover;
-
 }
 
-.book-info>strong {
+.product-info>strong {
   font-size: 16px;
   line-height: 20px;
   color: #878C99;
   margin-top: 8px;
 }
 
-.book-info>span {
+.product-info>span {
   font-size: 24px;
   font-weight: bold;
   margin: 8px 0;
 }
 
-.book-container button {
+.product-container button {
   background: transparent;
   color: #878C99;
-  border: 2px solid #33BFCB;
+  border: 2px solid #090306;
   border-radius: 4px;
   overflow: hidden;
   margin-top: auto;
@@ -56,26 +55,26 @@
   transition: background 0.5s, color 0.5s;
 }
 
-.book-container button:hover {
-  border: 2px solid #33BFCB;
+.product-container button:hover {
+  border: 2px solid #090306;
   color: #FFF;
-  background: #33BFCB;
+  background: #090306;
 }
 
-.book-container button div {
+.product-container button div {
   display: flex;
   align-items: center;
   padding: 12px;
   color: #878C99;
   background: #FFF;
-  border-right: 2px solid #33BFCB;
+  border-right: 2px solid #090306;
 }
 
-.book-container button div svg {
+.product-container button div svg {
   margin-right: 5px;
 }
 
-.book-container button span {
+.product-container button span {
   flex: 1;
   text-align: center;
   font-weight: bold;

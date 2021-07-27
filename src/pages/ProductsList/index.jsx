@@ -1,12 +1,10 @@
 import React from 'react';
-
+//PRODUCTS LIST
 import { products } from '../../server.json';
-
+//LIST COMPONENT GENERAL
 import List from '../../components/List'
-import './styles.css';
 
 export default function ProductList() {
-
   return (
     <main className="container">
       <List items={products} />
