@@ -41,7 +41,6 @@ export default function List({ items }) {
           {/* ADD ONE INCREMENT OF PRODUCT WHEN CLICKED */}
           <button type="button" onClick={() => { addProduct(item) }}>
             <div>
-              <FiShoppingBag size={16} color="#CE2533" />{' '}
               {amount[item.id] || 0}
             </div>
 

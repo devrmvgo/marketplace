@@ -46,7 +46,7 @@
 .product-container button {
   background: transparent;
   color: #878C99;
-  border: 2px solid #090306;
+  border: 1px solid #CE2533;
   border-radius: 4px;
   overflow: hidden;
   margin-top: auto;
@@ -56,9 +56,9 @@
 }
 
 .product-container button:hover {
-  border: 2px solid #090306;
+  border: 1px solid #CE2533;
   color: #FFF;
-  background: #090306;
+  background: #CE2533;
 }
 
 .product-container button div {
@@ -67,11 +67,7 @@
   padding: 12px;
   color: #878C99;
   background: #FFF;
-  border-right: 2px solid #090306;
-}
-
-.product-container button div svg {
-  margin-right: 5px;
+  border-right: 1px solid #CE2533;
 }
 
 .product-container button span {

@@ -1,3 +1,18 @@
+.bag-container {
+  padding: 30px;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bag-container img {
+  align-self: center;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
 .product-table {
   width: 100%;
 }

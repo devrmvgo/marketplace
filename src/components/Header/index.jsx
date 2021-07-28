@@ -10,7 +10,12 @@ import './styles.css';
 
 export default function Header() {
   //ITEMS QUANTITY IN SHOPPING CART
-  const shoppingCartSize = useSelector(state => state.shoppingCart.length);
+  const shoppingCartSize = useSelector(state =>
+    state.shoppingCart.reduce((sumAmount, product) => {
+      sumAmount = (parseInt(sumAmount) || 0) + parseInt(product.amount);
+
+      return sumAmount;
+    }, 0));
 
   return (
     <header className="header">
